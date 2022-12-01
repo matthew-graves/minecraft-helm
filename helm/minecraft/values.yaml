@@ -9,7 +9,7 @@ node:
 
 minecraft:
   gamemode: 'survival'
-  motd: 'Your super-cool, super-kube, minecraft server' # Message of the Day
+  motd: 'MineKubed' # Message of the Day
   port: 25565
 
 volume:
@@ -18,9 +18,9 @@ volume:
 
 resources:
   limits:
-    memory: 2Gi
+    memory: 6Gi
   requests:
-    memory: 1.5Gi
+    memory: 2Gi
 
 serviceAccount:
   create: true

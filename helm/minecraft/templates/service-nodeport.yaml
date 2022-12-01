@@ -9,6 +9,6 @@ spec:
   type: NodePort
   ports:
     - port: {{ .Values.minecraft.port }}
-      nodePort: {{ .Values.minecraft.port }}
+      nodePort: 30000
   selector:
     app: minecraft-server
