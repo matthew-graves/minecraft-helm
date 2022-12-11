@@ -31,19 +31,19 @@ spec:
           - name:  EULA
             value: 'TRUE'
           - name: MODE
-            value: {{ .Values.minecraft.gamemode }}
+            value: {{ .Values.minecraft.gamemode | quote }}
           - name: MOTD
-            value: {{ .Values.minecraft.motd }}
+            value: {{ .Values.minecraft.motd | quote  }}
           - name: ALLOW_FLIGHT
             value: 'TRUE'
           - name: TYPE
-            value: {{ .Values.minecraft.mod.type }}
+            value: {{ .Values.minecraft.mod.type | quote  }}
           - name: CF_SERVER_MOD
-            value: {{ .Values.minecraft.mod.modpackid }}
+            value: {{ .Values.minecraft.mod.modpackid | quote  }}
           - name: FTB_MODPACK_ID
-            value: {{ .Values.minecraft.mod.modpackid }}
+            value: {{ .Values.minecraft.mod.modpackid | quote  }}
           - name: FTB_MODPACK_VERSION_ID
-            value: {{ .Values.minecraft.mod.modpackversion }}
+            value: {{ .Values.minecraft.mod.modpackversion | quote  }}
           - name: MEMORY
             value: {{ .Values.minecraft.mod.javamemory }}
 
