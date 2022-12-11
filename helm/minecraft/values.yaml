@@ -8,10 +8,10 @@ minecraft:
   port: 25565
   mod: 
     javamemory: 4G # If increased, update resources limit to be 1-2GB more than this value
-    type: "FTBA" # Types: CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
+    type: 'FTBA' # Types: CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
       # New server types besides curseforge / ftb need new variables added in the deployment.yaml
-    modpackid: "99" # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
-    serverversion: "1.3.0" # Modpack Server Version; Unused for CurseForge 
+    modpackid: '99' # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
+    modpackversion: '1.3.0' # Modpack Server Version; Unused for CurseForge 
 
 # Don't touch
 volume:
