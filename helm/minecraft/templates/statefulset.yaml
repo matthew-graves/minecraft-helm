@@ -1,11 +1,11 @@
-# docker run -d -it -v /path/on/host:/data -e EULA=TRUE -p 25565:25565 --name mc itzg/minecraft-server
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: minecraft-server
   labels:
     app: minecraft-server
 spec:
+  serviceName: minecraft-server
   replicas: 1
   selector:
     matchLabels:
