@@ -10,9 +10,9 @@ minecraft:
     javamemory: 4G # If increased, update resources limit to be 1-2GB more than this value
     type: 'FTBA' # Types: CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
       # New server types besides curseforge / ftb need new variables added in the deployment.yaml
-    modpackid: '97' # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
-    modpackversion: '1.3.0' # Modpack Server Version
-    modpackstoragename: 'ftbone' # Use for reusing old world data storage; Change name on updating modpack, change back to reuse old saves
+    modpackid: '96' # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
+    modpackversion: '1.2.4' # Modpack Server Version
+    modpackstoragename: 'magicmountain' # Use for reusing old world data storage; Change name on updating modpack, change back to reuse old saves
 
 # Don't touch
 volume:
