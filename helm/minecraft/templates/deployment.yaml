@@ -26,7 +26,7 @@ spec:
           limits:
             memory: {{ .Values.resources.limits.memory }}
           requests:
-            memory: {{ .Values.resources.minecraft.mod.javamemory }}
+            memory: {{ .Values.minecraft.mod.javamemory }}
         env:
           - name:  EULA
             value: 'TRUE'
@@ -37,13 +37,13 @@ spec:
           - name: ALLOW_FLIGHT
             value: 'TRUE'
           - name: TYPE
-            value: {{ .Release.minecraft.mod.type }}
+            value: {{ .Values.minecraft.mod.type }}
           - name: CF_SERVER_MOD
-            value: {{ .Release.minecraft.mod.modpackid }}
+            value: {{ .Values.minecraft.mod.modpackid }}
           - name: FTB_MODPACK_ID
-            value: {{ .Release.minecraft.mod.modpackid }}
+            value: {{ .Values.minecraft.mod.modpackid }}
           - name: FTB_MODPACK_VERSION_ID
-            value: {{ .Release.minecraft.modpackupdateversion }}
+            value: {{ .Values.minecraft.mod.modpackupdateversion }}
           - name: MEMORY
             value: {{ .Values.minecraft.mod.javamemory }}
           - name: 
