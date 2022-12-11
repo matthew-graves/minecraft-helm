@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: minecraft-data-pvc
+  name: minecraft-data-pvc-{{ .Values.minecraft.mod.modpackstoragename }}
 spec:
   accessModes:
     - ReadWriteOnce
