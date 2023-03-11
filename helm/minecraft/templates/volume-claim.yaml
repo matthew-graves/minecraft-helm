@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: {{ .Values.minecraft.storageClass }}
+  storageClassName: {{ .Values.volume.storageClass }}
   resources:
     requests:
       storage: {{ .Values.volume.storage }}
