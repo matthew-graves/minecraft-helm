@@ -40,6 +40,8 @@ spec:
             value: {{ .Values.minecraft.mod.type | quote  }}
           - name: CF_SERVER_MOD
             value: {{ .Values.minecraft.mod.modpackid | quote  }}
+          - name: CF_SLUG
+            value: {{ .Values.minecraft.mod.modpackid | quote  }}
           - name: FTB_MODPACK_ID
             value: {{ .Values.minecraft.mod.modpackid | quote  }}
           - name: FTB_MODPACK_VERSION_ID
