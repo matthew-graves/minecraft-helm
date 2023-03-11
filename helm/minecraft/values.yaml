@@ -14,10 +14,11 @@ minecraft:
     # modpackversion: '1.2.4' # Modpack Server Version
     modpackstoragename: 'aqm2' # Use for reusing old world data storage; Change name on updating modpack, change back to reuse old saves
 
-# Don't touch
+
 volume:
-  storage: 3Gi
-  path: '/mnt/local-volumes/minecraft'
+  storage: 3Gi # Don't touch
+  path: '/mnt/local-volumes/minecraft' # Don't touch
+  storageClass: synology-iscsi-storage # Do touch
 
 # Don't touch
 resources:
@@ -27,3 +28,4 @@ resources:
 # Don't touch
 serviceAccount:
   create: true
+  
