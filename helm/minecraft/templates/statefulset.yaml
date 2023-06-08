@@ -64,7 +64,7 @@ spec:
             - 127.0.0.1
             - ping
           failureThreshold: 5
-          initialDelaySeconds: 360
+          initialDelaySeconds: 60
           periodSeconds: 60
           successThreshold: 1
           timeoutSeconds: 1
@@ -80,7 +80,7 @@ spec:
             - 127.0.0.1
             - ping
           failureThreshold: 5
-          initialDelaySeconds: 360
+          initialDelaySeconds: 60
           periodSeconds: 60
           successThreshold: 1
           timeoutSeconds: 1
