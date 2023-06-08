@@ -28,6 +28,8 @@ spec:
           requests:
             memory: {{ .Values.minecraft.mod.javamemory }}
         env:
+          - name: EXTRA_ARGS
+            value: --installServer
           - name:  EULA
             value: 'TRUE'
           - name: MODE
