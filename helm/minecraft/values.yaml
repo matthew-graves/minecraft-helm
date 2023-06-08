@@ -8,10 +8,10 @@ minecraft:
   port: 25565
   mod:
     javamemory: 10G # If increased, update resources limit to be 1-2GB more than this value
-    type: "AUTO_CURSEFORGE" # Types: AUTO_CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
+    type: "FORGE" # Types: AUTO_CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
     # New server types besides curseforge / ftb need new variables added in the deployment.yaml
-    modpackid: "gt-new-horizons" # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
-    modpackversion: "2.3.2" # Modpack Server Version
+    # modpackid: "gt-new-horizons" # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
+    modpackversion: "2.3.0" # Modpack Server Version
     # modpackstoragename: 'aqm2' # Use for reusing old world data storage; Change name on updating modpack, change back to reuse old saves
     modpackurl: "http://downloads.gtnewhorizons.com/ServerPacks/GT_New_Horizons_2.3.0_Server.zip"
     modpackstoragename: "gtnh"
