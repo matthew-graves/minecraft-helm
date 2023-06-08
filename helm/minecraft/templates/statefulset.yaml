@@ -51,8 +51,7 @@ spec:
           - name: MEMORY
             value: {{ .Values.minecraft.mod.javamemory }}
           - name VERSION
-            value: {{ .Values.minecraft.mod.version | quote  }}
-
+            value: {{ .Values.minecraft.version | quote  }}
         ports:
         - containerPort: {{ .Values.minecraft.port }}
           name: minecraft
