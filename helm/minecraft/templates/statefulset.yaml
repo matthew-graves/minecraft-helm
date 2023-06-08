@@ -21,7 +21,7 @@ spec:
           claimName: minecraft-data-pvc-{{ .Values.minecraft.mod.modpackstoragename }}
       containers:
       - name: minecraft-server
-        image: itzg/minecraft-server:java17
+        image: itzg/minecraft-server:java8-multiarch
         resources:
           limits:
             memory: {{ .Values.resources.limits.memory }}
@@ -34,6 +34,8 @@ spec:
             value: 'TRUE'
           - name: GUI
             value: 'FALSE'
+          - name: DEBUG
+            value: 'TRUE'
           - name: MODE
             value: {{ .Values.minecraft.gamemode | quote }}
           - name: MOTD
