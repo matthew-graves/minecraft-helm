@@ -36,6 +36,8 @@ spec:
             value: 'FALSE'
           - name: DEBUG
             value: 'TRUE'
+          - name: USE_MODPACK_START_SCRIPT
+            value: 'TRUE'
           - name: MODE
             value: {{ .Values.minecraft.gamemode | quote }}
           - name: MOTD
