@@ -64,8 +64,8 @@ spec:
             - 127.0.0.1
             - ping
           failureThreshold: 5
-          initialDelaySeconds: 60
-          periodSeconds: 60
+          initialDelaySeconds: 600
+          periodSeconds: 30
           successThreshold: 1
           timeoutSeconds: 1
         name: minecraft-server
@@ -80,7 +80,7 @@ spec:
             - 127.0.0.1
             - ping
           failureThreshold: 5
-          initialDelaySeconds: 60
-          periodSeconds: 60
+          initialDelaySeconds: 600
+          periodSeconds: 30
           successThreshold: 1
           timeoutSeconds: 1
