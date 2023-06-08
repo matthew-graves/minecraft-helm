@@ -44,7 +44,7 @@ spec:
             value: {{ .Values.minecraft.mod.modpackid | quote  }}
           - name: MEMORY
             value: {{ .Values.minecraft.mod.javamemory }}
-          - name: MODPACK
+          - name: CF_PAGE_URL
             value: {{ .Values.minecraft.mod.modpackurl | quote  }}
           - name: CF_API_KEY
             valueFrom:
