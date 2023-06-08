@@ -28,13 +28,9 @@ spec:
           requests:
             memory: {{ .Values.minecraft.mod.javamemory }}
         env:
-          - name: EXTRA_ARGS
-            value: --installServer
           - name:  EULA
             value: 'TRUE'
           - name: GUI
-            value: 'FALSE'
-          - name: USE_MODPACK_START_SCRIPT
             value: 'FALSE'
           - name: MODE
             value: {{ .Values.minecraft.gamemode | quote }}
