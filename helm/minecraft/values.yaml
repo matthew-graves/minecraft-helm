@@ -20,7 +20,7 @@ minecraft:
 volume:
   storage: 15Gi # Don't touch
   path: "/mnt/local-volumes/minecraft" # Don't touch
-  storageClass: synology-iscsi-storage # Do touch
+  storageClass: local-path # Do touch
 
 # Don't touch
 resources:
