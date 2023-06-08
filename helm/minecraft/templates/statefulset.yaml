@@ -34,10 +34,8 @@ spec:
             value: 'TRUE'
           - name: GUI
             value: 'FALSE'
-          - name: DEBUG
-            value: 'TRUE'
           - name: USE_MODPACK_START_SCRIPT
-            value: 'TRUE'
+            value: 'FALSE'
           - name: MODE
             value: {{ .Values.minecraft.gamemode | quote }}
           - name: MOTD
@@ -50,8 +48,6 @@ spec:
             value: {{ .Values.minecraft.mod.modpackid | quote  }}
           - name: MEMORY
             value: {{ .Values.minecraft.mod.javamemory }}
-          - name: VERSION
-            value: {{ .Values.minecraft.version | quote  }}
           - name: CF_API_KEY
             valueFrom:
               secretKeyRef:
