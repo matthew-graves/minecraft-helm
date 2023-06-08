@@ -52,6 +52,11 @@ spec:
             value: {{ .Values.minecraft.mod.javamemory }}
           - name: VERSION
             value: {{ .Values.minecraft.version | quote  }}
+          - name: CF_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: cf-api-key
+                key: key
         ports:
         - containerPort: {{ .Values.minecraft.port }}
           name: minecraft
