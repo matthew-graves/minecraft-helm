@@ -60,11 +60,11 @@ spec:
         livenessProbe:
           exec:
             command:
-            - mcstatus
+            - mc-monitor
+            - status
             - 127.0.0.1
-            - ping
           failureThreshold: 5
-          initialDelaySeconds: 600
+          initialDelaySeconds: 180
           periodSeconds: 30
           successThreshold: 1
           timeoutSeconds: 1
@@ -76,11 +76,11 @@ spec:
         readinessProbe:
           exec:
             command:
-            - mcstatus
+            - mc-monitor
+            - status
             - 127.0.0.1
-            - ping
           failureThreshold: 5
-          initialDelaySeconds: 600
+          initialDelaySeconds: 180
           periodSeconds: 30
           successThreshold: 1
           timeoutSeconds: 1
