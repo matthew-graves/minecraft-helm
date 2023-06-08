@@ -21,7 +21,7 @@ spec:
           claimName: minecraft-data-pvc-{{ .Values.minecraft.mod.modpackstoragename }}
       containers:
       - name: minecraft-server
-        image: itzg/minecraft-server:latest
+        image: itzg/minecraft-server:java8
         resources:
           limits:
             memory: {{ .Values.resources.limits.memory }}
