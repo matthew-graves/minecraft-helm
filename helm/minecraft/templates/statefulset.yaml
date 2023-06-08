@@ -32,6 +32,8 @@ spec:
             value: --installServer
           - name:  EULA
             value: 'TRUE'
+          - name: GUI
+            value: 'FALSE'
           - name: MODE
             value: {{ .Values.minecraft.gamemode | quote }}
           - name: MOTD
