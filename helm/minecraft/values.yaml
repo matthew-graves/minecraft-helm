@@ -14,7 +14,7 @@ minecraft:
     modpackversion: "2.3.2" # Modpack Server Version
     # modpackstoragename: 'aqm2' # Use for reusing old world data storage; Change name on updating modpack, change back to reuse old saves
     modpackurl: "http://downloads.gtnewhorizons.com/ServerPacks/GT_New_Horizons_2.3.0_Server.zip"
-    # modpackstoragename: "gtnh3"
+    modpackstoragename: "gtnh"
   # version: "1.9.10" # Minecraft Version
 
 volume:
