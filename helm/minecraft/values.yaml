@@ -8,7 +8,7 @@ minecraft:
   port: 25565
   mod:
     javamemory: 10G # If increased, update resources limit to be 1-2GB more than this value
-    type: "GENERIC_PACK" # Types: AUTO_CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
+    type: "CUSTOM" # Types: AUTO_CURSEFORGE / FTBA ; Check here for how to set modpack type https://github.com/itzg/docker-minecraft-server/blob/master/README.md#server-types
     # New server types besides curseforge / ftb need new variables added in the deployment.yaml
     # modpack: 'another-quality-modpack-2' # Can be used for either FTB or Curseforge values: Check for details about how to specify modpack ID here https://github.com/itzg/docker-minecraft-server/blob/master/README.md#running-a-server-with-a-feed-the-beast-modpack
     # modpackversion: '1.2.4' # Modpack Server Version
